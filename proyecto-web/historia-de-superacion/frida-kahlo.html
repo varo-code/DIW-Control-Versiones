@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Kahlo - Historia de Superación</title>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Animación del emoji 🎨 */
+        .emoji-animation {
+            font-size: 3rem;
+            animation: move-horizontal 10s linear infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        @keyframes move-horizontal {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body class="text-vine-white text-vine">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Exuvia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cards.html">Índice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../audio.html">Canciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Historia de Superación</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="alex-roca.html">Álex Roca</a></li>
+                            <li><a class="dropdown-item" href="pablo-pineda.html">Pablo Pineda</a></li>
+                            <li><a class="dropdown-item" href="hansel-emmanuel.html">Hansel Emmanuel</a></li>
+                            <li><a class="dropdown-item" href="bethany-hamilton.html">Bethany Hamilton</a></li>
+                            <li><a class="dropdown-item" href="frida-kahlo.html">Frida Kahlo</a></li>
+                            <li><a class="dropdown-item" href="lionel-messi.html">Lionel Messi</a></li>
+                            <li><a class="dropdown-item" href="nick-vujicic.html">Nick Vujicic</a></li>
+                            <li><a class="dropdown-item" href="stephen-hawking.html">Stephen Hawking</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Frida Kahlo: Una Historia de Superación</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mt-4">
+        <!-- Quién es Frida Kahlo -->
+        <section>
+            <h2>¿Quién es Frida Kahlo?</h2>
+            <p>Frida Kahlo fue una pintora mexicana cuya vida estuvo marcada por el dolor físico y emocional, pero que transformó sus sufrimientos en arte. A los 18 años sufrió un grave accidente de autobús que le causó múltiples fracturas y problemas de salud de por vida, pero eso no le impidió convertirse en una de las artistas más influyentes del siglo XX.</p>
+        </section>
+
+        <!-- Superando Límites -->
+        <section class="mt-5">
+            <h2>Superando Límites</h2>
+            <p>A pesar de su dolor constante y múltiples cirugías, Frida siguió pintando, plasmando en su obra su identidad, sufrimientos y el folclore mexicano. Su vida y trabajo han inspirado a generaciones con su valentía y autenticidad.</p>
+            <blockquote class="blockquote text-center">
+                <p class="mb-0"><strong>"Pies, ¿para qué los quiero si tengo alas para volar?"</strong></p><br>
+                <footer class="blockquote-footer">Frida Kahlo</footer>
+            </blockquote>
+        </section>
+
+        <!-- Galería -->
+        <section class="mt-5">
+            <div class="emoji-animation">🎨🎨🎨</div>
+            <h2>Galería</h2><br>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/frida-kahlo-en-su-estudio.jpg" class="d-block w-100" alt="Frida Kahlo en su estudio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/frida-kahlo-con-una-obra.webp" class="d-block w-100" alt="Una de las pinturas de Frida Kahlo">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Recopilación de sus Poemas -->
+        <section class="mt-5">
+            <h2>Recopilación de sus Poemas</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pv-PmP_jIyQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Citas Inspiradoras -->
+        <section class="mt-5">
+            <h2>Citas Inspiradoras</h2>
+            <blockquote class="blockquote">
+                <p class="mb-0"><strong>"No lloro porque haya terminado, sonrío porque sucedió."</strong></p><br>
+                <footer class="blockquote-footer">Frida Kahlo</footer>
+            </blockquote>
+            <blockquote class="blockquote">
+                <p class="mb-0"><strong>"Intento expresar lo más profundo que hay en mí, lo que siento y veo."</strong></p><br>
+                <footer class="blockquote-footer">Frida Kahlo</footer>
+            </blockquote>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 - Proyecto Web</p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exuvia - Canciones</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <style>
+        .audio-player {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #EFDFBB;
+            border-radius: 10px;
+        }
+
+        .audio-title {
+            font-size: 1.5rem;
+            color: #722F37;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            height: 10px;
+            margin-top: 10px;
+        }
+
+        .progress-bar {
+            background-color: #566878;
+        }
+    </style>
+</head>
+<body class="text-vine-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand prov" href="index.html">Exuvia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cards.html">Índice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="canciones.html">Canciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Historia de Superación</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="historia-de-superacion/alex-roca.html">Álex Roca</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/pablo-pineda.html">Pablo Pineda</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/hansel-emmanuel.html">Hansel Emmanuel</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/bethany-hamilton.html">Bethany Hamilton</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/frida-kahlo.html">Frida Kahlo</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/lionel-messi.html">Lionel Messi</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/nick-vujicic.html">Nick Vujicic</a></li>
+                            <li><a class="dropdown-item" href="historia-de-superacion/stephen-hawking.html">Stephen Hawking</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Principal -->
+    <section id="inicio" class="py-5 text-center text-vine">
+        <div class="container">
+            <h1 class="title-animation text-vine">Canciones</h1>
+            <p>Escucha estas piezas inspiradoras mientras reflexionas sobre tu autosuperación.</p>
+        </div>
+    </section>
+
+    <!-- Reproductores de Audio -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Reproductor 1 -->
+            <div class="audio-player">
+                <h2 class="audio-title">El Tamborilero</h2>
+                <audio id="audio1" controls>
+                    <source src="audio/EL_TAMBORILERO.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="progress" style="height: 10px;">
+                    <div id="progress1" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button class="btn btn-primary mt-2" onclick="toggleLyrics('lyrics1')">Mostrar Letra</button>
+                <div id="lyrics1" class="mt-3 collapse">
+                    <p class="text-vine-white">
+                        El camino que lleva a Belén<br>
+                        Baja hasta el valle que la nieve cubrió<br>
+                        Los pastorcillos quieren ver a su rey<br>
+                        Le traen regalos en su humilde zurrón<br>
+                        Ropoponpon, ropoponpon<br>
+                        Ha nacido en un portal de Belén<br>
+                        El niño Dios<br><br>
+
+                        Yo quisiera poner a tus pies<br>
+                        Algún presente que te agrade, Señor<br>
+                        Mas tú ya sabes que soy pobre también<br>
+                        Y no poseo más que un viejo tambor<br>
+                        Ropoponpon, ropoponponpon<br>
+                        En tu honor, frente al portal, tocaré<br>
+                        Con mi tambor<br><br>
+
+                        El camino que lleva a Belén<br>
+                        Yo voy marcando con mi viejo tambor<br>
+                        Nada mejor hay que te pueda ofrecer<br>
+                        Su ronco acento es canto de amor<br>
+                        Ropoponpon, ropoponpon<br>
+                        Cuando Dios me vio tocando ante Él<br>
+                        Me sonrió, me sonrió
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reproductor 2 -->
+            <div class="audio-player">
+                <h2 class="audio-title">Hijos de la Clase Obrera</h2>
+                <audio id="audio2" controls>
+                    <source src="audio/6_Mala_Praxis_Hijos_de_la_clase_obrera.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="progress" style="height: 10px;">
+                    <div id="progress2" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button class="btn btn-primary mt-2" onclick="toggleLyrics('lyrics2')">Mostrar Letra</button>
+                <div id="lyrics2" class="mt-3 collapse">
+                    <p class="text-vine-white">
+                        El despertador me disparó, desde entonces lo llamo Tejero<br>
+                        Porque da golpes a mi estado de ánimo<br>
+                        Vestido de corrupción y caspa<br>
+                        Si quieres hablar de torturas pregunta a Grande-Marlaska<br>
+                        Te observan, está claro, y lo tienen sencillo<br>
+                        Con un micro y dos cámaras metidas en el bolsillo<br>
+                        Yo siempre pidiendo auxilio, no es estar en calma<br>
+                        Si los mayores genocidas nunca han tocado un arma<br>
+                        En la era del delito legal<br>
+                        Lo llaman ejecución hipotecaria, pero es una ejecución social<br>
+                        Siguen el cauce, tú deduce<br>
+                        Que quien rechaza la violencia es porque no la sufre<br>
+                        Eh, yo sacó la placa y no paré, de la furgo bajaron diez<br>
+                        Entre la porra y la pared, y en su nariz el Everest<br>
+                        Otra bandera en el balcón, y ya ni salgo<br>
+                        En España las fachadas se llaman así por algo<br>
+                        No disparo balas, pero me vigilan como si<br>
+                        Porque uso el cerebro como si fuera un misil<br>
+                        Niños jamás sabrán lo que pasó en la Guerra Civil<br>
+                        Pero van a saber qué es vivir con pobreza infantil<br>
+                        Progres citan a John Lennon, yo la rabia de un heleno<br>
+                        No salimos del baremo, el extremo del extremo<br>
+                        No rebajo mi mensaje aunque revivan al caudillo<br>
+                        Y tú rapeas y pareces Santiago Carrillo<br>
+                        Si me detienen por robar, después me...<br>
+                        Diagnosticarán cleptomanía y me afiliarán al PP<br>
+                        ¿Dónde tengo la cabeza?, creo que ya ni lo sé<br>
+                        Llevé una doble vida como un espía de la KGB<br>
+                        Obreras no ven a sus hijos, dice el capital<br>
+                        Que podrán verlos si el trabajo infantil vuelve a ser legal<br>
+                        Ahora el músico es el terrorista, y es absurdo<br>
+                        Esto no es Turquía, pero nos usan como cabezas de turco<br>
+                        En el surco, apuntando al obispo<br>
+                        Nunca creí en Dios, pero siempre estoy hecho un Cristo<br>
+                        Sal del bar, quizá te dé por pensar<br>
+                        Cuando UGT firme convenios en los que se te pueda latigar<br>
+                        Directo a tu hipotálamo, resisto como El Álamo<br>
+                        Al nazi que te combata, con un bate combátelo<br>
+                        Tú ven, asúmelo, y afronta el escenario<br>
+                        Para erradicar la pobreza hay que erradicar al millonario<br>
+                        Roban a diario mientras no te enteres, otro ERE<br>
+                        España no tiene habitantes, tiene rehenes<br>
+                        ¿Cuántos en la derecha rezan porque paremos?<br>
+                        Pero somos como un coche al que le han cortado los frenos<br>
+                        Jugando al desgaste, porque solo el pueblo salva<br>
+                        Solo el pueblo salva al pueblo del desastre<br>
+                        Que no hay magia negra, pero si la hubiera<br>
+                        Haría muñecos vudú con la cara de Álvaro Ojeda
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reproductor 3 -->
+            <div class="audio-player">
+                <h2 class="audio-title">Zapatillas</h2>
+                <audio id="audio3" controls>
+                    <source src="audio/El_Canto_del_Loco_Zapatillas.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="progress" style="height: 10px;">
+                    <div id="progress3" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button class="btn btn-primary mt-2" onclick="toggleLyrics('lyrics3')">Mostrar Letra</button>
+                <div id="lyrics3" class="mt-3 collapse">
+                    <p class="text-vine-white">
+                        Estoy cansado<br>
+                        De salir de noche y ver siempre la misma gente<br>
+                        Estoy flipando<br>
+                        De que la gente se invente, cuente y luego reinvente<br>
+                        Apoltronado<br>
+                        En el sofá de mi casa, vente, se está caliente<br>
+                        Amaestrados<br>
+                        Vamos al mismo sitio todos, aunque luego ni entres<br>
+                        Alucinando<br>
+                        De que me miren de arriba abajo como un delincuente<br>
+                        Intoxicado<br>
+                        De que me pongan esa puta música indiferente<br><br>
+
+                        Quiero entrar<br>
+                        En tu garito con zapatillas<br>
+                        Que no me miren mal al pasar<br>
+                        Estoy cansado de siempre lo mismo<br>
+                        La misma historia y quiero cambiar<br>
+                        Me da pena tanta tontería<br>
+                        Quiero un poquito de normalidad<br>
+                        Pero, a ver, mírame y dime<br>
+                        "Tronco no veo mi sitio y no puedo aparcar"<br><br>
+
+                        Estoy muy harto<br>
+                        De que me digan: "si no estás en lista, no puedes pasar"<br>
+                        Solo entran cuatro<br>
+                        Tenemos zona super-mega-guay y nunca la verás<br>
+                        Abarrotado<br>
+                        Hay aforo limitado y ahora toca esperar, y, y<br>
+                        Nos han multado<br>
+                        Y tu coche se ha llevado la grúa municipal<br><br>
+
+                        Quiero entrar<br>
+                        En tu garito con zapatillas<br>
+                        Que no me miren mal al pasar<br>
+                        Estoy cansado de siempre lo mismo<br>
+                        La misma historia y quiero cambiar<br>
+                        Me da pena tanta tontería<br>
+                        Quiero un poquito de normalidad<br>
+                        Pero, a ver, mírame y dime<br>
+                        "Tronco no veo mi sitio y no puedo aparcar"<br><br>
+
+                        Ya has aparcado el coche<br>
+                        Y ahora busca lo del ticket de la hora<br>
+                        Y cuando vuelvas a ponerlo<br>
+                        Te habrán puesto una receta de recuerdo<br><br>
+
+                        Quiero entrar<br>
+                        En tu garito con zapatillas<br>
+                        Que no me miren mal al pasar<br>
+                        Estoy cansado de siempre lo mismo<br>
+                        La misma historia y quiero cambiar<br>
+                        Me da pena tanta tontería<br>
+                        Quiero un poquito de normalidad<br>
+                        Pero, a ver, mírame y dime<br>
+                        "Tronco no veo mi sito y no puedo aparcar"
+                    </p>
+                </div>
+            </div>
+
+            <!-- Reproductor 4 -->
+            <div class="audio-player">
+                <h2 class="audio-title">Pedro</h2>
+                <audio id="audio4" controls>
+                    <source src="audio/PEDRO_Raffaella_Phonk.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+                <div class="progress" style="height: 10px;">
+                    <div id="progress4" class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button class="btn btn-primary mt-2" onclick="toggleLyrics('lyrics4')">Mostrar Letra</button>
+                <div id="lyrics4" class="mt-3 collapse">
+                    <p class="text-vine-white">
+                        Passeggio tutta sola per le strade<br>
+                        Guardando attentamente i monumenti<br>
+                        La classica straniera con un'aria strana<br>
+                        Che gira stanca tutta la città<br>
+                        A un certo punto della passeggiata<br>
+                        Mi chiama da una parte un ragazzino<br>
+                        Sembrava a prima vista tanto perbenino<br>
+                        Si offre a far da guida per la città<br><br>
+
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br><br>
+
+                        Altro che ragazzino, che perbenino<br>
+                        Sapeva molte cose più di me<br>
+                        Mi ha portato tante volte a veder le stelle<br>
+                        Ma non ho visto niente di Santa Fè<br><br>
+
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br><br>
+
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br><br>
+
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Praticamente il meglio di Santa Fè<br>
+                        Pedro, Pedro, Pedro, Pedro, Pè<br>
+                        Fidati di me
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Exuvia. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para alternar la visibilidad de la letra
+        function toggleLyrics(id) {
+            const lyrics = document.getElementById(id);
+            if (lyrics.classList.contains('show')) {
+                lyrics.classList.remove('show');
+            } else {
+                lyrics.classList.add('show');
+            }
+        }
+
+        // Función para actualizar la barra de progreso
+        function updateProgress(audioId, progressId) {
+            const audio = document.getElementById(audioId);
+            const progress = document.getElementById(progressId);
+
+            if (audio.currentTime > 0) {
+                const percentage = (audio.currentTime / audio.duration) * 100;
+                progress.style.width = percentage + '%';
+            }
+        }
+
+        // Actualizar barras de progreso cada segundo
+        setInterval(() => updateProgress('audio1', 'progress1'), 1000);
+        setInterval(() => updateProgress('audio2', 'progress2'), 1000);
+        setInterval(() => updateProgress('audio3', 'progress3'), 1000);
+        setInterval(() => updateProgress('audio4', 'progress4'), 1000);
+    </script>
+</body>
+</html>

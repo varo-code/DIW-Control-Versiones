@@ -1,0 +1,22 @@
+.audio-player {
+    margin: $spacing-lg 0;
+    padding: $spacing-md;
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    .audio-title {
+        font-size: 1.5rem;
+        color: $secondary-color;
+        margin-bottom: $spacing-sm;
+    }
+
+    .progress {
+        height: 10px;
+        margin-top: $spacing-sm;
+
+        .progress-bar {
+            background-color: $primary-color;
+        }
+    }
+}

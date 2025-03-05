@@ -1,0 +1,14 @@
+.canciones-section {
+    padding: $spacing-lg;
+
+    h1 {
+        font-size: 3rem;
+        color: $secondary-color;
+        padding-top: $spacing-lg;
+    }
+
+    p {
+        line-height: 1.6;
+        color: $text-color;
+    }
+}

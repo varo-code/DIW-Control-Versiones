@@ -1,0 +1,118 @@
+/* Estilo para todo el trabajo*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Estilo para el título principal */
+h1, h2{
+    font-size: 3rem;
+    color: #333; /* Color específico para los títulos */
+    padding-top: 70px; /* Ajusta según la altura del menú */
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+
+.text-vine {
+    color: #722F37  !important;
+}
+/* 
+722F37 - EFDFBB - Vino
+b5b24c - F9F9F9 - Aceite
+566878 - EAE0C8 - Playa
+EFE9E0 - 0F9E99 - Playa 2
+FBA002 - 313B2F - GRUAS
+*/
+.text-vine-white {
+    background-color: #EFDFBB !important;
+}
+
+    /* Animación para el título */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.title-animation {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilo para el botón "Descubre más" */
+.btn-primary {
+    background-color: #FBA002;
+    border-color: #313B2F;
+}
+.btn-primary:hover {
+    background-color: #c57d00;
+    border-color: #313B2F;
+}
+
+/* Estilo para el footer */
+footer {
+    font-size: 0.9rem;
+    color: #722F37; 
+}
+
+/* Estilos para imágenes de diferentes tamaños */
+img.pequeña { width: 50px; height: 50px; }
+img.mediana { width: 100px; height: 100px; }
+img.grande { width: 300px; height: 300px; }
+
+/* Estilo para la sección "Acerca de" */
+#acerca-de {
+    overflow: hidden;
+}
+
+/* Estilo para la imagen redondeada */
+.rounded-circle {
+    object-fit: cover;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Media query para pantallas menores a 768px */
+@media (max-width: 767px) {
+    .rounded-circle {
+        display: block;
+        float: none !important;
+    }
+}
+
+/* Media query para pantallas mayores a 1000px */
+@media (min-width: 1000px) {
+    /* Elimina la redondez de la imagen */
+    #acerca-de img {
+        border-radius: 0; 
+        width: 300px;     
+        height: auto;     
+    }
+}
+
+/* Estilo para el texto en la sección "Acerca de" */
+#acerca-de h2 {
+    margin-bottom: 20px;
+}
+#acerca-de p {
+    line-height: 1.6;
+}
+
+/* Estilo para el menú desplegable */
+.navbar {
+    color: inherit; 
+}
+.navbar a, .navbar .dropdown-menu a {
+    color: #EEE5DA; 
+}
+.navbar .dropdown-menu {
+    min-width: 200px;
+    background-color: #343a40;
+    border: none;
+}
+.navbar .dropdown-menu a:hover {
+    background-color: #03abaa;
+    color: #313B2F;
+}
